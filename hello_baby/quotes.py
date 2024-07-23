@@ -1,5 +1,6 @@
 """_summary_
 """
+
 quotes = [
     {
         "quote": "A long descriptive name is better than a short "

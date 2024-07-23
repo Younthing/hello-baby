@@ -5,6 +5,7 @@ Returns:
 """
 
 import random
+
 from hello_baby.quotes import quotes
 
 

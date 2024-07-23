@@ -16,5 +16,4 @@ except ImportError:
 # 导入 get_quote 函数
 from .get_quote import get_quote
 
-
 __all__ = ["__version__", "get_quote"]
