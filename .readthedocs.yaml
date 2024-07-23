@@ -1,0 +1,27 @@
+# .readthedocs.yaml
+# Read the Docs 配置文件
+# 详情请参见 https://docs.readthedocs.io/en/stable/config-file/v2.html
+
+# 必需参数
+version: 2
+
+# 设置操作系统、Python版本及其他可能需要的工具
+build:
+  os: ubuntu-22.04 # 使用Ubuntu 22.04操作系统
+  tools:
+    python: "3.11" # 使用Python 3.11版本
+
+# 使用 Sphinx 在 "docs/" 目录中构建文档
+sphinx:
+  configuration: docs/conf.py # Sphinx 配置文件路径
+
+# 可选地使用 PDF 和 ePub 格式构建文档
+# formats:
+#    - pdf                 # 启用 PDF 格式构建
+#    - epub                # 启用 ePub 格式构建
+
+# 使用 Poetry 管理 Python 依赖包
+python:
+  install:
+    - method: poetry # 指定使用Poetry进行依赖管理
+      path: . # Poetry 配置文件路径（当前项目的根目录）
