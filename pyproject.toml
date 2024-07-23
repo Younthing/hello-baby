@@ -1,6 +1,9 @@
 [tool.poetry]
 name = "hello-baby"
-version = "0.1.0"
+packages = [
+    { include = "hello_baby" },
+]
+version = "2.1.0"
 description = ""
 authors = ["younthing <fanxingfu3344@gmail.com>"]
 readme = "README.md"
