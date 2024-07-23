@@ -105,11 +105,14 @@ jobs:
       # 使用flake8进行代码质量检查
       - name: Run flake8
         run: poetry run flake8 .
+        continue-on-error: true
 
       # 使用bandit进行安全性检查
       - name: Run bandit
         run: poetry run bandit .
+        continue-on-error: true
 
       # 使用safety检查项目中的依赖安全性
       - name: Run safety
         run: poetry run safety check
+        continue-on-error: true

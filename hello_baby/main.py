@@ -11,7 +11,7 @@ app = Typer(add_completion=True)  # add_completion=False 关闭自动补全
 
 
 # 不给help参数时下面被装饰函数的注释会出现在help
-@app.callback(invoke_without_command=True, help="A simple CLI tool for GROMACS")
+@app.callback(invoke_without_command=True, help="A CLI tool for GROMACS")
 def callback(
     ctx: typer.Context,
     version: Optional[bool] = typer.Option(
