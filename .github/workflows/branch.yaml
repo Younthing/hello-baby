@@ -52,7 +52,9 @@ jobs:
 
       # 将覆盖率报告上传到Codecov
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   # 定义代码质量检查任务
   code-quality:
