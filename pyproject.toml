@@ -3,7 +3,7 @@ name = "hello-baby"
 packages = [
     { include = "hello_baby" },
 ]
-version = "2.1.0"
+version = "0.0.0"
 description = ""
 authors = ["younthing <fanxingfu3344@gmail.com>"]
 readme = "README.md"
@@ -27,9 +27,8 @@ bandit = "^1.7.9"
 safety = "^3.2.4"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
+requires = ["poetry-core","poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
 [tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
