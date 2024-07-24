@@ -3,7 +3,7 @@ name = "hello-baby"
 packages = [
     { include = "hello_baby" },
 ]
-version = "0.0.0"
+version = "3.1.0"
 description = ""
 authors = ["younthing <fanxingfu3344@gmail.com>"]
 readme = "README.md"
